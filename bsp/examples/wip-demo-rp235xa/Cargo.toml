@@ -7,7 +7,8 @@ license = "MIT"
 
 [dependencies]
 cortex-m-rt = "0.7.5"
-embassy-rp = { version = "0.4.0", features = ["rp235xa", "defmt", "unstable-pac", "time-driver", "critical-section-impl"] }
+embassy-rp = { version = "0.4.0", features = ["defmt", "unstable-pac", "time-driver", "critical-section-impl"] }
+peek-o-display-bsp = { path = "../../", features = ["rp235xa"] }
 embassy-embedded-hal = { version = "0.3.0", features = ["defmt"] }
 embassy-executor = { version = "0.7.0", features = ["task-arena-size-98304", "arch-cortex-m", "executor-thread", "executor-interrupt", "defmt"] }
 embassy-time = "0.4.0"

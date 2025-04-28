@@ -7,10 +7,7 @@ use defmt::info;
 use defmt_rtt as _;
 use embassy_embedded_hal::shared_bus::blocking::spi::SpiDeviceWithConfig;
 use embassy_executor::Spawner;
-use embassy_rp::{
-    gpio::{Input, Level, Output, Pull},
-    peripherals,
-};
+use embassy_rp::gpio::{Input, Level, Output, Pull};
 use embassy_sync::blocking_mutex::{raw::NoopRawMutex, Mutex};
 use embassy_time::{Delay, Timer};
 use embedded_graphics::{
@@ -29,28 +26,29 @@ use mipidsi::{
     options::{ColorOrder, Orientation, Rotation},
 };
 use panic_probe as _;
+use peek_o_display_bsp::peripherals::{self, PeekODisplay};
 use portable_atomic as _;
 use touch::Touch;
 
 assign_resources! {
     board_spi: BoardSpiResources {
         spi: SPI0,
-        clk: PIN_2,
-        mosi: PIN_3,
-        miso: PIN_4,
+        clk: SPI_CLK,
+        mosi: SPI_MOSI,
+        miso: SPI_MISO,
     }
     display: DisplayResources {
-        cs: PIN_5,
-        dc: PIN_8,
-        reset: PIN_7,
-        backlight: PIN_9,
+        cs: DISPLAY_CS,
+        dc: DISPLAY_DC,
+        reset: DISPLAY_RESET,
+        backlight: DISPLAY_BACKLIGHT,
     }
     touch_panel: TouchPanelResources {
-        cs: PIN_14,
-        irq: PIN_15,
+        cs: TOUCH_CS,
+        irq: TOUCH_IRQ,
     }
     sd_card: SdCardResources {
-        cs: PIN_6,
+        cs: SDCARD_CS,
     }
     led: LedResources {
         led: PIN_25,
@@ -59,7 +57,7 @@ assign_resources! {
 
 #[embassy_executor::main]
 async fn main(_spawner: Spawner) {
-    let p = embassy_rp::init(Default::default());
+    let p = PeekODisplay::default();
     let r = split_resources!(p);
 
     let mut led = Output::new(r.led.led, Level::Low);
