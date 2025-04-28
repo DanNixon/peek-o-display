@@ -12,7 +12,7 @@ use embassy_rp::{
     peripherals,
 };
 use embassy_sync::blocking_mutex::{raw::NoopRawMutex, Mutex};
-use embassy_time::{Delay, Duration, Timer};
+use embassy_time::{Delay, Timer};
 use embedded_graphics::{
     draw_target::DrawTarget,
     mono_font::{ascii::FONT_10X20, MonoTextStyle},
@@ -22,7 +22,7 @@ use embedded_graphics::{
     Drawable,
 };
 use embedded_graphics::{pixelcolor::Rgb666, prelude::WebColors};
-use embedded_sdmmc::{Mode, SdCard, VolumeIdx, VolumeManager};
+use embedded_sdmmc::SdCard;
 use mipidsi::{
     interface::SpiInterface,
     models::ILI9341Rgb666,
