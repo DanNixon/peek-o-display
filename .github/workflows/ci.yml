@@ -76,6 +76,7 @@ jobs:
       matrix:
         example:
           - "kitchen-sink-rp2040"
+          - "kitchen-sink-rp235xa"
           - "steal-rp2040"
 
     steps:
