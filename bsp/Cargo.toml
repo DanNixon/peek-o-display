@@ -1,0 +1,13 @@
+[package]
+name = "peek-o-display-bsp"
+version = "0.1.0"
+edition = "2021"
+authors = ["Dan Nixon <dan@dan-nixon.com>"]
+license = "MIT"
+
+[features]
+rp2040 = ["embassy-rp/rp2040"]
+rp235xa = ["embassy-rp/rp235xa"]
+
+[dependencies]
+embassy-rp = "0.4.0"
