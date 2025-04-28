@@ -10,6 +10,7 @@ in {
     treefmt
     alejandra
     mdl
+    rustfmt
 
     # Rust toolchain
     rustup
