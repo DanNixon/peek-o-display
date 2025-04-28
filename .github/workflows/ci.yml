@@ -26,3 +26,75 @@ jobs:
       - name: Format
         shell: devenv shell bash -- -e {0}
         run: treefmt --fail-on-change
+
+  bsp:
+    name: BSP
+    needs:
+      - formatting
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: cachix/install-nix-action@v31
+      - uses: cachix/cachix-action@v16
+        with:
+          name: devenv
+      - name: Install devenv.sh
+        run: nix profile install nixpkgs#devenv
+
+      - name: Clippy (rp2040)
+        shell: devenv shell bash -- -e {0}
+        run: |
+          cd ./bsp
+          cargo clippy --target thumbv6m-none-eabi -F rp2040 -- -D warnings
+
+      - name: Clippy (rp235xa)
+        shell: devenv shell bash -- -e {0}
+        run: |
+          cd ./bsp
+          cargo clippy --target thumbv8m.main-none-eabihf -F rp235xa -- -D warnings
+
+      - name: Build (rp2040)
+        shell: devenv shell bash -- -e {0}
+        run: |
+          cd ./bsp
+          cargo build --target thumbv6m-none-eabi -F rp2040
+
+      - name: Build (rp235xa)
+        shell: devenv shell bash -- -e {0}
+        run: |
+          cd ./bsp
+          cargo build --target thumbv8m.main-none-eabihf -F rp235xa
+
+  examples:
+    name: Examples
+    needs:
+      - bsp
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        example:
+          - "kitchen-sink-rp2040"
+          - "steal-rp2040"
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: cachix/install-nix-action@v31
+      - uses: cachix/cachix-action@v16
+        with:
+          name: devenv
+      - name: Install devenv.sh
+        run: nix profile install nixpkgs#devenv
+
+      - name: Clippy
+        shell: devenv shell bash -- -e {0}
+        run: |
+          cd ./bsp/examples/${{ matrix.example }}
+          cargo clippy -- -D warnings
+
+      - name: Build
+        shell: devenv shell bash -- -e {0}
+        run: |
+          cd ./bsp/examples/${{ matrix.example }}
+          cargo build
