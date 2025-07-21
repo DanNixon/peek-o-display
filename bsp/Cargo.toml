@@ -1,7 +1,7 @@
 [package]
 name = "peek-o-display-bsp"
 version = "0.1.0"
-edition = "2021"
+edition = "2024"
 authors = ["Dan Nixon <dan@dan-nixon.com>"]
 license = "MIT"
 
@@ -10,4 +10,12 @@ rp2040 = ["embassy-rp/rp2040"]
 rp235xa = ["embassy-rp/rp235xa"]
 
 [dependencies]
+embassy-embedded-hal = { version = "=0.3.0", features = ["defmt"] }
 embassy-rp = "0.4.0"
+embassy-sync = "0.6.1"
+embassy-time = "0.4.0"
+embedded-hal = "1.0.0"
+embedded-sdmmc = { version = "0.8.1", default-features = false, features = ["defmt-log"] }
+mipidsi = "0.9.0"
+portable-atomic = { version = "1.11.1", default-features = false, features = ["critical-section"] }
+static_cell = "2.1.1"

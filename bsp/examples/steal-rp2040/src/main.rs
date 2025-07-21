@@ -6,12 +6,13 @@ use defmt_rtt as _;
 use embassy_executor::Spawner;
 use embassy_rp::gpio::{Level, Output};
 use embassy_time::{Duration, Timer};
-use peek_o_display_bsp::peripherals::PeekODisplay;
+use peek_o_display_bsp::PeekODisplay;
 use portable_atomic as _;
 
 #[panic_handler]
 fn panic(_info: &core::panic::PanicInfo) -> ! {
-    let p = unsafe { PeekODisplay::steal() };
+    let board = unsafe { PeekODisplay::steal() };
+    let p = board.peripherals();
 
     let mut led = Output::new(p.PIN_25, Level::Low);
 
@@ -23,7 +24,8 @@ fn panic(_info: &core::panic::PanicInfo) -> ! {
 
 #[embassy_executor::main]
 async fn main(_spawner: Spawner) {
-    let p = PeekODisplay::default();
+    let board = PeekODisplay::default();
+    let p = board.peripherals();
 
     info!("Hello, world!");
 
