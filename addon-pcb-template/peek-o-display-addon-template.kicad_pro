@@ -58,28 +58,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        [
-          "silk_over_copper|98065347|75330000|3fe82b7c-73d7-4d6f-b896-060c6a1c518a|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "starved_thermal|109220000|106680000|21a046b4-dee8-4eb6-a18d-34f3d51206f7|8076007c-e432-4db1-b74b-2246c58c321d|F.Cu",
-          ""
-        ],
-        [
-          "starved_thermal|86000000|86360000|21a046b4-dee8-4eb6-a18d-34f3d51206f7|22359434-cf26-4135-b8a6-55327bf67e82|F.Cu",
-          ""
-        ],
-        [
-          "starved_thermal|91440000|106680000|21a046b4-dee8-4eb6-a18d-34f3d51206f7|bd89f458-feed-41df-a606-ab09c16d988c|F.Cu",
-          ""
-        ],
-        [
-          "starved_thermal|91440000|81280000|21a046b4-dee8-4eb6-a18d-34f3d51206f7|50504173-d168-4125-becb-6a27bfe5ead7|F.Cu",
-          ""
-        ]
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -510,7 +489,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "peek-o-display.kicad_pro",
+    "filename": "peek-o-display-addon-template.kicad_pro",
     "version": 3
   },
   "net_settings": {
