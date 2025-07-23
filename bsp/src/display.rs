@@ -18,6 +18,9 @@ pub type Display = mipidsi::Display<
     Output<'static>,
 >;
 
+pub static WIDTH: u16 = 240;
+pub static HEIGHT: u16 = 320;
+
 fn spi_config() -> Config {
     let mut config = Config::default();
     config.frequency = 64_000_000;
@@ -42,7 +45,7 @@ pub fn init(
     let interface = SpiInterface::new(spi, dc, buffer);
 
     let display = mipidsi::Builder::new(ILI9341Rgb666, interface)
-        .display_size(240, 320)
+        .display_size(WIDTH, HEIGHT)
         .orientation(Orientation::default().rotate(rotation).flip_horizontal())
         .color_order(ColorOrder::Bgr)
         .reset_pin(rst)

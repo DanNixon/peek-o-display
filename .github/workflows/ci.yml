@@ -75,9 +75,11 @@ jobs:
     strategy:
       matrix:
         example:
-          - "kitchen-sink-rp2040"
-          - "kitchen-sink-rp235xa"
-          - "steal-rp2040"
+          - kitchen-sink-rp2040
+          - kitchen-sink-rp235xa
+          - steal-rp2040
+          - touch-calibration-rp2040
+          - touch-calibration-rp235xa
 
     steps:
       - uses: actions/checkout@v4

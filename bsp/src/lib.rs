@@ -18,7 +18,10 @@ use embassy_sync::blocking_mutex::{raw::NoopRawMutex, Mutex};
 use mipidsi::options::Rotation;
 use portable_atomic as _;
 use static_cell::StaticCell;
-use touch::Touch;
+use touch::{Calibration, Touch};
+
+// Re-export
+pub use embassy_rp;
 
 /// PeekODisplay board representation.
 #[allow(non_snake_case)]
@@ -210,8 +213,13 @@ impl PeekODisplay {
         self.touch_resources.take().unwrap()
     }
 
-    pub fn touch(&self, spi: &'static BoardSharedSpiBus) -> (Touch, Input<'static>) {
-        touch::init(spi, self.touch_resources())
+    pub fn touch(
+        &self,
+        spi: &'static BoardSharedSpiBus,
+        rotation: Rotation,
+        calibration: Calibration,
+    ) -> (Touch, Input<'static>) {
+        touch::init(spi, self.touch_resources(), rotation, calibration)
     }
 
     pub fn sdcard_resources(&self) -> SdCardResources {
