@@ -69,7 +69,6 @@
 			(psnegative no)
 			(psa4output no)
 			(plot_black_and_white yes)
-			(plotinvisibletext no)
 			(sketchpadsonfab no)
 			(plotpadnumbers no)
 			(hidednponfab no)
@@ -2415,7 +2414,7 @@
 					(fill yes)
 				)
 			)
-			(uuid "0d2ca6f6-4aef-4bc9-a9f2-24556793c86e")
+			(uuid "396044c8-ff30-4b44-89c6-2a296d44cbd2")
 		)
 		(pad "2" thru_hole circle
 			(at -8.89 -21.59)
@@ -2439,7 +2438,7 @@
 			(net 29 "/I2C_CLK")
 			(pinfunction "GPIO1")
 			(pintype "bidirectional")
-			(uuid "de4a82e2-2923-4ec4-9921-ced312d1caa9")
+			(uuid "15114afe-9967-4189-97ac-004464550db0")
 		)
 		(pad "3" smd custom
 			(at -8.89 -19.05)
@@ -2515,7 +2514,7 @@
 					(fill yes)
 				)
 			)
-			(uuid "50504173-d168-4125-becb-6a27bfe5ead7")
+			(uuid "14197028-cfb0-4fa9-95f9-e6120aacaf09")
 		)
 		(pad "4" thru_hole circle
 			(at -8.89 -16.51)
@@ -2539,7 +2538,7 @@
 			(net 23 "/SPI_CLK")
 			(pinfunction "GPIO2")
 			(pintype "bidirectional")
-			(uuid "c31a2e91-a7d9-452f-bf9a-c8962141a2b7")
+			(uuid "9bb5253f-e609-425e-b028-798fbd2bf44c")
 		)
 		(pad "5" thru_hole circle
 			(at -8.89 -13.97)
@@ -2563,7 +2562,7 @@
 			(net 20 "/SPI_MOSI")
 			(pinfunction "GPIO3")
 			(pintype "bidirectional")
-			(uuid "afe78c17-8161-4b53-bcce-9c1617f18c5b")
+			(uuid "9962666d-c015-4c2e-8100-d3a0f148c3fc")
 		)
 		(pad "6" thru_hole circle
 			(at -8.89 -11.43)
@@ -2587,7 +2586,7 @@
 			(net 21 "/SPI_MISO")
 			(pinfunction "GPIO4")
 			(pintype "bidirectional")
-			(uuid "b987e0a7-d521-4031-bbb0-e8be93c3d280")
+			(uuid "9dd06465-b1f9-46e8-a24f-026327c6770d")
 		)
 		(pad "7" thru_hole circle
 			(at -8.89 -8.89)
@@ -2611,7 +2610,7 @@
 			(net 28 "/DISPLAY_CS")
 			(pinfunction "GPIO5")
 			(pintype "bidirectional")
-			(uuid "d97a71b4-d976-4252-a43a-4c06b7996005")
+			(uuid "c5c055f1-b138-4381-a210-1ce8557bcc3b")
 		)
 		(pad "8" smd custom
 			(at -8.89 -6.35)
@@ -2687,7 +2686,7 @@
 					(fill yes)
 				)
 			)
-			(uuid "16e4e94b-716a-45dd-8476-4feb851db0cd")
+			(uuid "9661565c-1fa2-4cd2-b053-93f45f29c129")
 		)
 		(pad "9" thru_hole circle
 			(at -8.89 -3.81)
@@ -2711,7 +2710,7 @@
 			(net 11 "/SD_CS")
 			(pinfunction "GPIO6")
 			(pintype "bidirectional")
-			(uuid "eeb5ab09-3a4e-4ed1-9fe4-d556161f7091")
+			(uuid "29f1dd8f-0429-4375-bd60-bb9136a5b2cc")
 		)
 		(pad "10" thru_hole circle
 			(at -8.89 -1.27)
@@ -2735,7 +2734,7 @@
 			(net 15 "/DISPLAY_RST")
 			(pinfunction "GPIO7")
 			(pintype "bidirectional")
-			(uuid "5f93fdcd-c3da-4105-80b2-cef8ec268414")
+			(uuid "a18a32da-6224-47da-b007-6206eaa3b212")
 		)
 		(pad "11" thru_hole circle
 			(at -8.89 1.27)
@@ -2759,7 +2758,7 @@
 			(net 31 "/DISPLAY_DC")
 			(pinfunction "GPIO8")
 			(pintype "bidirectional")
-			(uuid "a505a574-6089-4d20-8007-9d0e86511173")
+			(uuid "323251cc-78cf-42a2-bcbd-5acd16c28814")
 		)
 		(pad "12" thru_hole circle
 			(at -8.89 3.81)
@@ -2783,7 +2782,7 @@
 			(net 19 "/DISPLAY_BL")
 			(pinfunction "GPIO9")
 			(pintype "bidirectional")
-			(uuid "5c595408-5f8c-47fa-8dfe-d98d83163506")
+			(uuid "0127ac05-c436-4639-9e78-33ff9dad472d")
 		)
 		(pad "13" smd custom
 			(at -8.89 6.35)
@@ -2859,7 +2858,7 @@
 					(fill yes)
 				)
 			)
-			(uuid "bd89f458-feed-41df-a606-ab09c16d988c")
+			(uuid "5432af30-3fc6-4371-ab26-c5cc7b6ca89a")
 		)
 		(pad "14" thru_hole circle
 			(at -8.89 8.89)
@@ -2883,7 +2882,7 @@
 			(net 69 "/IO_10")
 			(pinfunction "GPIO10")
 			(pintype "bidirectional")
-			(uuid "246bbaac-9a69-4126-9398-1f6da9ac6695")
+			(uuid "06a39241-2cb8-4952-b973-2bba2e8848dc")
 		)
 		(pad "15" thru_hole circle
 			(at -8.89 11.43)
@@ -2907,7 +2906,7 @@
 			(net 70 "/IO_11")
 			(pinfunction "GPIO11")
 			(pintype "bidirectional")
-			(uuid "38cbffe9-1980-4f30-803d-6a7be1631ac7")
+			(uuid "5770bb72-ade6-4bdd-9db4-e7fae91831f9")
 		)
 		(pad "16" thru_hole circle
 			(at -8.89 13.97)
@@ -2931,7 +2930,7 @@
 			(net 3 "/IO_12")
 			(pinfunction "GPIO12")
 			(pintype "bidirectional")
-			(uuid "08f2aab6-48c4-49d2-8c7a-a73f076d6a68")
+			(uuid "c6624d22-2e7a-426a-83f7-ce7203192256")
 		)
 		(pad "17" thru_hole circle
 			(at -8.89 16.51)
@@ -2955,7 +2954,7 @@
 			(net 18 "/IO_13")
 			(pinfunction "GPIO13")
 			(pintype "bidirectional")
-			(uuid "a17099e2-b09d-4ccc-bfa4-24d10a99ac9e")
+			(uuid "0343f8b7-9861-43c3-bf1e-4af3e98de879")
 		)
 		(pad "18" smd custom
 			(at -8.89 19.05)
@@ -3031,7 +3030,7 @@
 					(fill yes)
 				)
 			)
-			(uuid "bd52f52e-694a-4837-8693-c61e096d3aa4")
+			(uuid "de418d42-06d7-4a05-a206-b8db88bbf653")
 		)
 		(pad "19" thru_hole circle
 			(at -8.89 21.59)
@@ -3055,7 +3054,7 @@
 			(net 14 "/TOUCH_CS")
 			(pinfunction "GPIO14")
 			(pintype "bidirectional")
-			(uuid "abd1620c-ea87-43b1-8649-ac63edf4d139")
+			(uuid "208f66e1-9588-4675-a041-41a1ff5b969b")
 		)
 		(pad "20" thru_hole circle
 			(at -8.89 24.13)
@@ -3079,7 +3078,7 @@
 			(net 9 "/TOUCH_IRQ")
 			(pinfunction "GPIO15")
 			(pintype "bidirectional")
-			(uuid "f88f3b1a-4186-4675-bf84-93a9c10dec19")
+			(uuid "23469c13-3760-4611-b1a8-37aa88d1e8f0")
 		)
 		(pad "21" thru_hole circle
 			(at 8.89 24.13)
@@ -3103,7 +3102,7 @@
 			(net 27 "/IO_16")
 			(pinfunction "GPIO16")
 			(pintype "bidirectional")
-			(uuid "d644c9b3-6722-42e5-b927-f1ba865cd7db")
+			(uuid "cca4d7e3-8b4a-4903-942b-604b9d1c086d")
 		)
 		(pad "22" thru_hole circle
 			(at 8.89 21.59)
@@ -3127,7 +3126,7 @@
 			(net 16 "/IO_17")
 			(pinfunction "GPIO17")
 			(pintype "bidirectional")
-			(uuid "815229a9-37ff-42a0-9fb8-dd1945ddf5cf")
+			(uuid "21aa1644-59f2-44d4-836c-c1c5e6b60de1")
 		)
 		(pad "23" smd custom
 			(at 8.89 19.05)
@@ -3203,7 +3202,7 @@
 					(fill yes)
 				)
 			)
-			(uuid "cb6d1b6e-99e6-4882-948f-21b7ad4a0e89")
+			(uuid "4a290d0f-06fd-49f4-92b6-182241725308")
 		)
 		(pad "24" thru_hole circle
 			(at 8.89 16.51)
@@ -3227,7 +3226,7 @@
 			(net 6 "/IO_18")
 			(pinfunction "GPIO18")
 			(pintype "bidirectional")
-			(uuid "0ddb9015-5ab4-43e3-b29e-16512894b864")
+			(uuid "89e9c337-e1b4-435b-ae9c-d913bce94e0b")
 		)
 		(pad "25" thru_hole circle
 			(at 8.89 13.97)
@@ -3251,7 +3250,7 @@
 			(net 2 "/IO_19")
 			(pinfunction "GPIO19")
 			(pintype "bidirectional")
-			(uuid "0329ce17-3384-46fd-8b83-adc6adaf10df")
+			(uuid "330360d8-5db2-4df9-9611-f68d54de1dd2")
 		)
 		(pad "26" thru_hole circle
 			(at 8.89 11.43)
@@ -3275,7 +3274,7 @@
 			(net 22 "/IO_20")
 			(pinfunction "GPIO20")
 			(pintype "bidirectional")
-			(uuid "ba92b9dc-96a4-467e-a1cc-0cb268fa2dbc")
+			(uuid "5b5bdabd-1aff-4655-ae86-29cc1096f0ba")
 		)
 		(pad "27" thru_hole circle
 			(at 8.89 8.89)
@@ -3299,7 +3298,7 @@
 			(net 30 "/IO_21")
 			(pinfunction "GPIO21")
 			(pintype "bidirectional")
-			(uuid "ee8f9df9-938b-4d28-907f-9931bda9d6f2")
+			(uuid "4eb0eeae-2b9a-4fee-8ff6-bc283d6f612b")
 		)
 		(pad "28" smd custom
 			(at 8.89 6.35)
@@ -3375,7 +3374,7 @@
 					(fill yes)
 				)
 			)
-			(uuid "8076007c-e432-4db1-b74b-2246c58c321d")
+			(uuid "d3d8bd4a-c006-407d-a57f-a2144e48d453")
 		)
 		(pad "29" thru_hole circle
 			(at 8.89 3.81)
@@ -3399,7 +3398,7 @@
 			(net 7 "/IO_22")
 			(pinfunction "GPIO22")
 			(pintype "bidirectional")
-			(uuid "212f504a-6070-4c39-879d-04ccd9f541da")
+			(uuid "65331aef-379a-4206-b74c-af5a64630ffb")
 		)
 		(pad "30" thru_hole circle
 			(at 8.89 1.27)
@@ -3423,7 +3422,7 @@
 			(net 1 "unconnected-(A1-RUN-Pad30)")
 			(pinfunction "RUN")
 			(pintype "input+no_connect")
-			(uuid "17fccb0c-1625-4cd3-bd57-951a20d84395")
+			(uuid "b65ac911-c891-4542-b82e-3793797f4bbd")
 		)
 		(pad "31" thru_hole circle
 			(at 8.89 -1.27)
@@ -3447,7 +3446,7 @@
 			(net 10 "/IO_26")
 			(pinfunction "GPIO26_ADC0")
 			(pintype "bidirectional")
-			(uuid "283659e4-2e7a-483c-a911-4ec2b72ddca3")
+			(uuid "5e925976-4d99-4070-a7f3-d44c3a6f6bd1")
 		)
 		(pad "32" thru_hole circle
 			(at 8.89 -3.81)
@@ -3471,7 +3470,7 @@
 			(net 17 "/IO_27")
 			(pinfunction "GPIO27_ADC1")
 			(pintype "bidirectional")
-			(uuid "9ebbf5ab-bf78-43b3-bbc8-cf09ff9a1a2c")
+			(uuid "3be5e2da-7dfe-45f2-873d-21e24fefb853")
 		)
 		(pad "33" smd custom
 			(at 8.89 -6.35)
@@ -3547,7 +3546,7 @@
 					(fill yes)
 				)
 			)
-			(uuid "3fcc790a-e98c-4836-b521-065e62993519")
+			(uuid "cd54c095-f0a2-4e2b-958b-e04f214f212b")
 		)
 		(pad "34" thru_hole circle
 			(at 8.89 -8.89)
@@ -3571,7 +3570,7 @@
 			(net 13 "/IO_28")
 			(pinfunction "GPIO28_ADC2")
 			(pintype "bidirectional")
-			(uuid "53104398-234d-471a-a472-654c86db97bf")
+			(uuid "8e7a67d7-6bd4-4bc0-b6fa-78c7ae9a8197")
 		)
 		(pad "35" thru_hole circle
 			(at 8.89 -11.43)
@@ -3595,7 +3594,7 @@
 			(net 25 "/ADC_VREF")
 			(pinfunction "ADC_VREF")
 			(pintype "power_in")
-			(uuid "c8401c95-de23-49b6-8885-149d065a6fee")
+			(uuid "e8359b6f-dc70-4461-9e1d-76cfb6f00b0d")
 		)
 		(pad "36" thru_hole circle
 			(at 8.89 -13.97)
@@ -3619,7 +3618,7 @@
 			(net 24 "+3.3V")
 			(pinfunction "3V3")
 			(pintype "power_out")
-			(uuid "855cf2f0-1594-4230-ae5f-8df22983324a")
+			(uuid "1914a044-3688-4adb-a28a-f50d359f3c8f")
 		)
 		(pad "37" thru_hole circle
 			(at 8.89 -16.51)
@@ -3643,7 +3642,7 @@
 			(net 68 "unconnected-(A1-3V3_EN-Pad37)_1")
 			(pinfunction "3V3_EN")
 			(pintype "input+no_connect")
-			(uuid "e180128d-6661-4b69-a913-f924a994769f")
+			(uuid "71a78739-0d04-4f21-b673-026fdac95e51")
 		)
 		(pad "38" smd custom
 			(at 8.89 -19.05)
@@ -3719,7 +3718,7 @@
 					(fill yes)
 				)
 			)
-			(uuid "5f9b2a28-7188-4f20-8f59-7505a0009193")
+			(uuid "8bb5fb26-86fa-489b-a00d-7ab6b4eaa6a7")
 		)
 		(pad "39" thru_hole circle
 			(at 8.89 -21.59)
@@ -3743,7 +3742,7 @@
 			(net 26 "+5V")
 			(pinfunction "VSYS")
 			(pintype "power_in")
-			(uuid "8c44e047-d324-463d-a793-57f0c30787cc")
+			(uuid "af54f294-b182-4ed1-b4a8-fdbc0dabfd1e")
 		)
 		(pad "40" thru_hole circle
 			(at 8.89 -24.13)
@@ -3767,7 +3766,7 @@
 			(net 8 "VBUS")
 			(pinfunction "VBUS")
 			(pintype "power_out")
-			(uuid "235ecbdc-d298-4467-b22d-a282432ae5c3")
+			(uuid "1aac80af-1382-4edc-9c35-ce45f6ef3e82")
 		)
 		(zone
 			(net 0)
@@ -4058,46 +4057,6 @@
 			(net 0)
 			(net_name "")
 			(layers "F.Cu" "F.Paste")
-			(uuid "c30250de-76ce-47fe-b6a8-6b730c1786ce")
-			(name "Pad Keep Out D2")
-			(hatch full 0.5)
-			(connect_pads
-				(clearance 0)
-			)
-			(min_thickness 0.25)
-			(filled_areas_thickness no)
-			(keepout
-				(tracks not_allowed)
-				(vias not_allowed)
-				(pads not_allowed)
-				(copperpour not_allowed)
-				(footprints allowed)
-			)
-			(placement
-				(enabled no)
-				(sheetname "")
-			)
-			(fill
-				(thermal_gap 0.5)
-				(thermal_bridge_width 0.5)
-			)
-			(polygon
-				(pts
-					(xy 99.73 123.23) (xy 100.33 123.23)
-					(arc
-						(start 100.33 126.83)
-						(mid 99.622893 126.537107)
-						(end 99.33 125.83)
-					)
-					(xy 99.33 123.63) (xy 99.332193 123.566994) (xy 99.371133 123.447148) (xy 99.445201 123.345201)
-					(xy 99.547148 123.271133) (xy 99.666994 123.232193)
-				)
-			)
-		)
-		(zone
-			(net 0)
-			(net_name "")
-			(layers "F.Cu" "F.Paste")
 			(uuid "5c1e9660-aa6a-40f6-a531-4467fc5ebe69")
 			(name "Pad Keep Out TP1")
 			(hatch full 0.5)
@@ -4172,6 +4131,83 @@
 			(net 0)
 			(net_name "")
 			(layers "F.Cu" "F.Paste")
+			(uuid "f925e324-bea2-4a82-9d2d-dd957cfe9142")
+			(name "Pad Keep Out TP2")
+			(hatch full 0.5)
+			(connect_pads
+				(clearance 0)
+			)
+			(min_thickness 0.25)
+			(filled_areas_thickness no)
+			(keepout
+				(tracks not_allowed)
+				(vias not_allowed)
+				(pads not_allowed)
+				(copperpour not_allowed)
+				(footprints allowed)
+			)
+			(placement
+				(enabled no)
+				(sheetname "")
+			)
+			(fill
+				(thermal_gap 0.5)
+				(thermal_bridge_width 0.5)
+			)
+			(polygon
+				(pts
+					(xy 101.33 76.995) (xy 101.78 76.995) (xy 101.845545 76.992861) (xy 101.972167 76.958933) (xy 102.085694 76.893388)
+					(xy 102.178388 76.800694) (xy 102.243933 76.687167) (xy 102.277861 76.560545) (xy 102.28 76.495)
+					(xy 102.28 75.595) (xy 102.277861 75.529455) (xy 102.243933 75.402833) (xy 102.178388 75.289306)
+					(xy 102.085694 75.196612) (xy 101.972167 75.131067) (xy 101.845545 75.097139) (xy 101.78 75.095)
+					(xy 101.33 75.095)
+				)
+			)
+		)
+		(zone
+			(net 0)
+			(net_name "")
+			(layers "F.Cu" "F.Paste")
+			(uuid "c30250de-76ce-47fe-b6a8-6b730c1786ce")
+			(name "Pad Keep Out D2")
+			(hatch full 0.5)
+			(connect_pads
+				(clearance 0)
+			)
+			(min_thickness 0.25)
+			(filled_areas_thickness no)
+			(keepout
+				(tracks not_allowed)
+				(vias not_allowed)
+				(pads not_allowed)
+				(copperpour not_allowed)
+				(footprints allowed)
+			)
+			(placement
+				(enabled no)
+				(sheetname "")
+			)
+			(fill
+				(thermal_gap 0.5)
+				(thermal_bridge_width 0.5)
+			)
+			(polygon
+				(pts
+					(xy 99.73 123.23) (xy 100.33 123.23)
+					(arc
+						(start 100.33 126.83)
+						(mid 99.622893 126.537107)
+						(end 99.33 125.83)
+					)
+					(xy 99.33 123.63) (xy 99.332193 123.566994) (xy 99.371133 123.447148) (xy 99.445201 123.345201)
+					(xy 99.547148 123.271133) (xy 99.666994 123.232193)
+				)
+			)
+		)
+		(zone
+			(net 0)
+			(net_name "")
+			(layers "F.Cu" "F.Paste")
 			(uuid "5b69a9dc-6bfa-4ac0-aa21-8ded5724787c")
 			(name "Pad Keep Out D2")
 			(hatch full 0.5)
@@ -4212,13 +4248,13 @@
 			(net 0)
 			(net_name "")
 			(layers "F.Cu" "F.Paste")
-			(uuid "f925e324-bea2-4a82-9d2d-dd957cfe9142")
-			(name "Pad Keep Out TP2")
-			(hatch full 0.5)
+			(uuid "1d729644-29fd-4e2b-bcac-c5a57e9d9ebb")
+			(name "Pad Keep Out D2-W")
+			(hatch full 0.508)
 			(connect_pads
 				(clearance 0)
 			)
-			(min_thickness 0.25)
+			(min_thickness 0.254)
 			(filled_areas_thickness no)
 			(keepout
 				(tracks not_allowed)
@@ -4232,16 +4268,61 @@
 				(sheetname "")
 			)
 			(fill
-				(thermal_gap 0.5)
-				(thermal_bridge_width 0.5)
+				(thermal_gap 0.508)
+				(thermal_bridge_width 0.508)
 			)
 			(polygon
 				(pts
-					(xy 101.33 76.995) (xy 101.78 76.995) (xy 101.845545 76.992861) (xy 101.972167 76.958933) (xy 102.085694 76.893388)
-					(xy 102.178388 76.800694) (xy 102.243933 76.687167) (xy 102.277861 76.560545) (xy 102.28 76.495)
-					(xy 102.28 75.595) (xy 102.277861 75.529455) (xy 102.243933 75.402833) (xy 102.178388 75.289306)
-					(xy 102.085694 75.196612) (xy 101.972167 75.131067) (xy 101.845545 75.097139) (xy 101.78 75.095)
-					(xy 101.33 75.095)
+					(xy 104.446278 106.03) (xy 104.427382 105.837285) (xy 104.371414 105.65191) (xy 104.280506 105.480937)
+					(xy 104.15812 105.330877) (xy 104.008919 105.207447) (xy 103.838584 105.115348) (xy 103.653605 105.058087)
+					(xy 103.461027 105.037846) (xy 103.268184 105.055396) (xy 103.082424 105.110069) (xy 102.91082 105.199781)
+					(xy 102.759909 105.321116) (xy 102.635441 105.469452) (xy 102.542154 105.63914) (xy 102.483603 105.823715)
+					(xy 102.462019 106.016147) (xy 102.478222 106.209107) (xy 102.531596 106.395245) (xy 102.620108 106.567471)
+					(xy 102.740387 106.719225) (xy 102.887851 106.844726) (xy 103.056882 106.939195) (xy 103.241044 106.999033)
+					(xy 103.433321 107.02196) (xy 103.62639 107.007105) (xy 103.812896 106.955031) (xy 103.985736 106.867724)
+					(xy 104.138325 106.748507) (xy 104.264853 106.601923) (xy 104.3605 106.433555) (xy 104.421622 106.249816)
+					(xy 104.445891 106.057703)
+				)
+			)
+		)
+		(zone
+			(net 0)
+			(net_name "")
+			(layers "F.Cu" "F.Paste")
+			(uuid "26873af4-c596-405a-a549-2361b0590844")
+			(name "Pad Keep Out D3-W")
+			(hatch full 0.508)
+			(connect_pads
+				(clearance 0)
+			)
+			(min_thickness 0.254)
+			(filled_areas_thickness no)
+			(keepout
+				(tracks not_allowed)
+				(vias not_allowed)
+				(pads not_allowed)
+				(copperpour not_allowed)
+				(footprints allowed)
+			)
+			(placement
+				(enabled no)
+				(sheetname "")
+			)
+			(fill
+				(thermal_gap 0.508)
+				(thermal_bridge_width 0.508)
+			)
+			(polygon
+				(pts
+					(xy 106.986278 106.03) (xy 106.967382 105.837285) (xy 106.911414 105.65191) (xy 106.820506 105.480937)
+					(xy 106.69812 105.330877) (xy 106.548919 105.207447) (xy 106.378584 105.115348) (xy 106.193605 105.058087)
+					(xy 106.001027 105.037846) (xy 105.808184 105.055396) (xy 105.622424 105.110069) (xy 105.45082 105.199781)
+					(xy 105.299909 105.321116) (xy 105.175441 105.469452) (xy 105.082154 105.63914) (xy 105.023603 105.823715)
+					(xy 105.002019 106.016147) (xy 105.018222 106.209107) (xy 105.071596 106.395245) (xy 105.160108 106.567471)
+					(xy 105.280387 106.719225) (xy 105.427851 106.844726) (xy 105.596882 106.939195) (xy 105.781044 106.999033)
+					(xy 105.973321 107.02196) (xy 106.16639 107.007105) (xy 106.352896 106.955031) (xy 106.525736 106.867724)
+					(xy 106.678325 106.748507) (xy 106.804853 106.601923) (xy 106.9005 106.433555) (xy 106.961622 106.249816)
+					(xy 106.985891 106.057703)
 				)
 			)
 		)
@@ -4416,88 +4497,6 @@
 		(zone
 			(net 0)
 			(net_name "")
-			(layers "F.Cu" "F.Paste")
-			(uuid "1d729644-29fd-4e2b-bcac-c5a57e9d9ebb")
-			(name "Pad Keep Out D2-W")
-			(hatch full 0.508)
-			(connect_pads
-				(clearance 0)
-			)
-			(min_thickness 0.254)
-			(filled_areas_thickness no)
-			(keepout
-				(tracks not_allowed)
-				(vias not_allowed)
-				(pads not_allowed)
-				(copperpour not_allowed)
-				(footprints allowed)
-			)
-			(placement
-				(enabled no)
-				(sheetname "")
-			)
-			(fill
-				(thermal_gap 0.508)
-				(thermal_bridge_width 0.508)
-			)
-			(polygon
-				(pts
-					(xy 104.446278 106.03) (xy 104.427382 105.837285) (xy 104.371414 105.65191) (xy 104.280506 105.480937)
-					(xy 104.15812 105.330877) (xy 104.008919 105.207447) (xy 103.838584 105.115348) (xy 103.653605 105.058087)
-					(xy 103.461027 105.037846) (xy 103.268184 105.055396) (xy 103.082424 105.110069) (xy 102.91082 105.199781)
-					(xy 102.759909 105.321116) (xy 102.635441 105.469452) (xy 102.542154 105.63914) (xy 102.483603 105.823715)
-					(xy 102.462019 106.016147) (xy 102.478222 106.209107) (xy 102.531596 106.395245) (xy 102.620108 106.567471)
-					(xy 102.740387 106.719225) (xy 102.887851 106.844726) (xy 103.056882 106.939195) (xy 103.241044 106.999033)
-					(xy 103.433321 107.02196) (xy 103.62639 107.007105) (xy 103.812896 106.955031) (xy 103.985736 106.867724)
-					(xy 104.138325 106.748507) (xy 104.264853 106.601923) (xy 104.3605 106.433555) (xy 104.421622 106.249816)
-					(xy 104.445891 106.057703)
-				)
-			)
-		)
-		(zone
-			(net 0)
-			(net_name "")
-			(layers "F.Cu" "F.Paste")
-			(uuid "26873af4-c596-405a-a549-2361b0590844")
-			(name "Pad Keep Out D3-W")
-			(hatch full 0.508)
-			(connect_pads
-				(clearance 0)
-			)
-			(min_thickness 0.254)
-			(filled_areas_thickness no)
-			(keepout
-				(tracks not_allowed)
-				(vias not_allowed)
-				(pads not_allowed)
-				(copperpour not_allowed)
-				(footprints allowed)
-			)
-			(placement
-				(enabled no)
-				(sheetname "")
-			)
-			(fill
-				(thermal_gap 0.508)
-				(thermal_bridge_width 0.508)
-			)
-			(polygon
-				(pts
-					(xy 106.986278 106.03) (xy 106.967382 105.837285) (xy 106.911414 105.65191) (xy 106.820506 105.480937)
-					(xy 106.69812 105.330877) (xy 106.548919 105.207447) (xy 106.378584 105.115348) (xy 106.193605 105.058087)
-					(xy 106.001027 105.037846) (xy 105.808184 105.055396) (xy 105.622424 105.110069) (xy 105.45082 105.199781)
-					(xy 105.299909 105.321116) (xy 105.175441 105.469452) (xy 105.082154 105.63914) (xy 105.023603 105.823715)
-					(xy 105.002019 106.016147) (xy 105.018222 106.209107) (xy 105.071596 106.395245) (xy 105.160108 106.567471)
-					(xy 105.280387 106.719225) (xy 105.427851 106.844726) (xy 105.596882 106.939195) (xy 105.781044 106.999033)
-					(xy 105.973321 107.02196) (xy 106.16639 107.007105) (xy 106.352896 106.955031) (xy 106.525736 106.867724)
-					(xy 106.678325 106.748507) (xy 106.804853 106.601923) (xy 106.9005 106.433555) (xy 106.961622 106.249816)
-					(xy 106.985891 106.057703)
-				)
-			)
-		)
-		(zone
-			(net 0)
-			(net_name "")
 			(layer "Edge.Cuts")
 			(uuid "80e19666-a1a1-449f-83e3-9d4efa433a9b")
 			(name "Board Keep Out USB Cable")
@@ -4563,50 +4562,6 @@
 			)
 		)
 		(group ""
-			(uuid "b47e439a-2049-4eee-bd2a-4264ed8005e3")
-			(members "0329ce17-3384-46fd-8b83-adc6adaf10df" "08f2aab6-48c4-49d2-8c7a-a73f076d6a68"
-				"0d2ca6f6-4aef-4bc9-a9f2-24556793c86e" "0ddb9015-5ab4-43e3-b29e-16512894b864"
-				"16e4e94b-716a-45dd-8476-4feb851db0cd" "17fccb0c-1625-4cd3-bd57-951a20d84395"
-				"212f504a-6070-4c39-879d-04ccd9f541da" "235ecbdc-d298-4467-b22d-a282432ae5c3"
-				"246bbaac-9a69-4126-9398-1f6da9ac6695" "283659e4-2e7a-483c-a911-4ec2b72ddca3"
-				"2c5c70d5-5491-47e7-bc53-70f27d291885" "38cbffe9-1980-4f30-803d-6a7be1631ac7"
-				"3fcc790a-e98c-4836-b521-065e62993519" "50504173-d168-4125-becb-6a27bfe5ead7"
-				"53104398-234d-471a-a472-654c86db97bf" "5c595408-5f8c-47fa-8dfe-d98d83163506"
-				"5f184d6a-1ab5-4c47-a6c1-c18c9247f244" "5f93fdcd-c3da-4105-80b2-cef8ec268414"
-				"5f9b2a28-7188-4f20-8f59-7505a0009193" "611343fb-c57d-46d8-8102-55d16f5eaa87"
-				"6babcf36-1671-459c-852e-aeda8dc8ec22" "8076007c-e432-4db1-b74b-2246c58c321d"
-				"815229a9-37ff-42a0-9fb8-dd1945ddf5cf" "855cf2f0-1594-4230-ae5f-8df22983324a"
-				"8c44e047-d324-463d-a793-57f0c30787cc" "9ebbf5ab-bf78-43b3-bbc8-cf09ff9a1a2c"
-				"a17099e2-b09d-4ccc-bfa4-24d10a99ac9e" "a3f594fa-581b-445e-ba60-8d9f2de8f581"
-				"a505a574-6089-4d20-8007-9d0e86511173" "abd1620c-ea87-43b1-8649-ac63edf4d139"
-				"afe78c17-8161-4b53-bcce-9c1617f18c5b" "b987e0a7-d521-4031-bbb0-e8be93c3d280"
-				"ba92b9dc-96a4-467e-a1cc-0cb268fa2dbc" "bd52f52e-694a-4837-8693-c61e096d3aa4"
-				"bd89f458-feed-41df-a606-ab09c16d988c" "c31a2e91-a7d9-452f-bf9a-c8962141a2b7"
-				"c8401c95-de23-49b6-8885-149d065a6fee" "cb6d1b6e-99e6-4882-948f-21b7ad4a0e89"
-				"d644c9b3-6722-42e5-b927-f1ba865cd7db" "d97a71b4-d976-4252-a43a-4c06b7996005"
-				"de4a82e2-2923-4ec4-9921-ced312d1caa9" "e180128d-6661-4b69-a913-f924a994769f"
-				"e69c25ad-90ba-41c1-bcf2-1643a0953aa1" "ebe4e884-1251-4874-b55c-76444a8de9ce"
-				"edd87d3f-4b75-497d-bf7b-5b04c7b72b39" "ee8f9df9-938b-4d28-907f-9931bda9d6f2"
-				"eeb5ab09-3a4e-4ed1-9fe4-d556161f7091" "f88f3b1a-4186-4675-bf84-93a9c10dec19"
-			)
-		)
-		(group ""
-			(uuid "d21a7cd8-065f-4efe-8e72-72688dd70be6")
-			(members "13c3a942-c84d-4cc5-a04e-1f51f8bc292e" "29cda7a7-538f-49e3-87f9-36f210871546"
-				"3c43dff9-b82c-42e4-89a1-14bf347f2c18" "47d32e38-e2d0-4342-b0c7-1e3ae805da88"
-				"569f62c0-1beb-4a7b-941c-6210899f7ac7" "5c1e9660-aa6a-40f6-a531-4467fc5ebe69"
-				"5dcdcdf3-8673-418d-9799-fc83d70f6bdc" "60110c9f-741c-43a9-809a-d60c6810a59d"
-				"62cde5ae-c162-4027-9fca-e75a803ca606" "634e0a92-76e3-498c-b15f-dc4ca6de9fd8"
-				"74a61f15-d498-4bdb-ac9b-5a6baee9a47e" "75cb1167-118d-4171-b0c4-0a668b4e307c"
-				"813bce1c-bf5b-42c3-bb0a-2bfb169aa26e" "8a016c0e-6be8-4f30-ba27-c5448deb9060"
-				"9ca3cfa5-e93c-4639-a843-81fa36ec5289" "a22336de-ef1b-4401-bbcc-1e34c73732ec"
-				"a5685973-85c3-4697-bb57-4ad252f2ae44" "a69da3a8-ec04-4695-9720-b5df78802725"
-				"ad3590f1-44ae-42f3-a642-88396a9e5041" "c73edf24-3a25-4a8b-8576-f60e978958b1"
-				"c850a144-01d6-4cf9-8de4-12a84afdd6ea" "cf81cedb-844c-425f-b75d-cc5b7a4b6e78"
-				"f925e324-bea2-4a82-9d2d-dd957cfe9142"
-			)
-		)
-		(group ""
 			(uuid "b0200091-5ea6-4ea0-aa21-49f5cb21bfe5")
 			(members "0329ce17-3384-46fd-8b83-adc6adaf10df" "03ab9fc3-49ac-41d1-8c84-30324cee0538"
 				"07ff3958-0d33-4649-b2af-53e143b83e45" "08f2aab6-48c4-49d2-8c7a-a73f076d6a68"
@@ -4649,6 +4604,22 @@
 				"ee8f9df9-938b-4d28-907f-9931bda9d6f2" "eeb5ab09-3a4e-4ed1-9fe4-d556161f7091"
 				"f0e23619-45d5-4bff-b2cf-c2b4695c15b4" "f88f3b1a-4186-4675-bf84-93a9c10dec19"
 				"fc286e2a-c26d-4f65-acf5-f0a71d135ce8" "fd5216e8-3f26-453e-86b9-e6d83a024770"
+			)
+		)
+		(group ""
+			(uuid "d21a7cd8-065f-4efe-8e72-72688dd70be6")
+			(members "13c3a942-c84d-4cc5-a04e-1f51f8bc292e" "29cda7a7-538f-49e3-87f9-36f210871546"
+				"3c43dff9-b82c-42e4-89a1-14bf347f2c18" "47d32e38-e2d0-4342-b0c7-1e3ae805da88"
+				"569f62c0-1beb-4a7b-941c-6210899f7ac7" "5c1e9660-aa6a-40f6-a531-4467fc5ebe69"
+				"5dcdcdf3-8673-418d-9799-fc83d70f6bdc" "60110c9f-741c-43a9-809a-d60c6810a59d"
+				"62cde5ae-c162-4027-9fca-e75a803ca606" "634e0a92-76e3-498c-b15f-dc4ca6de9fd8"
+				"74a61f15-d498-4bdb-ac9b-5a6baee9a47e" "75cb1167-118d-4171-b0c4-0a668b4e307c"
+				"813bce1c-bf5b-42c3-bb0a-2bfb169aa26e" "8a016c0e-6be8-4f30-ba27-c5448deb9060"
+				"9ca3cfa5-e93c-4639-a843-81fa36ec5289" "a22336de-ef1b-4401-bbcc-1e34c73732ec"
+				"a5685973-85c3-4697-bb57-4ad252f2ae44" "a69da3a8-ec04-4695-9720-b5df78802725"
+				"ad3590f1-44ae-42f3-a642-88396a9e5041" "c73edf24-3a25-4a8b-8576-f60e978958b1"
+				"c850a144-01d6-4cf9-8de4-12a84afdd6ea" "cf81cedb-844c-425f-b75d-cc5b7a4b6e78"
+				"f925e324-bea2-4a82-9d2d-dd957cfe9142"
 			)
 		)
 		(group ""
@@ -4697,6 +4668,14 @@
 			(uuid "18d13f31-9763-4c4e-bb01-af030a10a70a")
 			(members "17dbed17-9e1c-41d4-b0a7-35ce88d70cc8" "2cb57d2e-8763-4cb6-a660-2d79d91a205d"
 				"5d549a21-7d2d-4a91-ad99-48d8e5fff0f3" "b8b6e5e3-f8e9-41b4-b403-83cacfdc1f17"
+			)
+		)
+		(group ""
+			(uuid "b47e439a-2049-4eee-bd2a-4264ed8005e3")
+			(members "2c5c70d5-5491-47e7-bc53-70f27d291885" "5f184d6a-1ab5-4c47-a6c1-c18c9247f244"
+				"611343fb-c57d-46d8-8102-55d16f5eaa87" "6babcf36-1671-459c-852e-aeda8dc8ec22"
+				"a3f594fa-581b-445e-ba60-8d9f2de8f581" "e69c25ad-90ba-41c1-bcf2-1643a0953aa1"
+				"ebe4e884-1251-4874-b55c-76444a8de9ce" "edd87d3f-4b75-497d-bf7b-5b04c7b72b39"
 			)
 		)
 		(group ""
