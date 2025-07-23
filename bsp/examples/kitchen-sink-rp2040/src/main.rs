@@ -5,7 +5,6 @@ use assign_resources::assign_resources;
 use defmt::{info, unwrap};
 use defmt_rtt as _;
 use embassy_executor::Spawner;
-use embassy_rp::gpio::{Input, Level, Output};
 use embassy_time::{Duration, Ticker, Timer};
 use embedded_graphics::{
     draw_target::DrawTarget,
@@ -20,7 +19,8 @@ use embedded_graphics::{
 use panic_probe as _;
 use peek_o_display_bsp::{
     display::{Display, Rotation},
-    peripherals,
+    embassy_rp::gpio::{Input, Level, Output},
+    peripherals::{self, Peri},
     sdcard::SdCard,
     touch::{Calibration, Touch},
     PeekODisplay,

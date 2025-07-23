@@ -12,7 +12,7 @@ use embassy_embedded_hal::shared_bus::blocking::spi::SpiDeviceWithConfig;
 use embassy_rp::{
     config::Config,
     gpio::{Input, Output},
-    Peripherals as RpPeripherals,
+    Peri, Peripherals as RpPeripherals,
 };
 use embassy_sync::blocking_mutex::{raw::NoopRawMutex, Mutex};
 use mipidsi::options::Rotation;
@@ -242,24 +242,24 @@ pub type BoardSpiDevice = SpiDeviceWithConfig<
 >;
 
 pub struct SpiResources {
-    peripheral: SPI0,
-    clk: SPI_CLK,
-    mosi: SPI_MOSI,
-    miso: SPI_MISO,
+    peripheral: Peri<'static, SPI0>,
+    clk: Peri<'static, SPI_CLK>,
+    mosi: Peri<'static, SPI_MOSI>,
+    miso: Peri<'static, SPI_MISO>,
 }
 
 pub struct DisplayResources {
-    pub cs: DISPLAY_CS,
-    pub dc: DISPLAY_DC,
-    pub reset: DISPLAY_RESET,
-    pub backlight: DISPLAY_BACKLIGHT,
+    pub cs: Peri<'static, DISPLAY_CS>,
+    pub dc: Peri<'static, DISPLAY_DC>,
+    pub reset: Peri<'static, DISPLAY_RESET>,
+    pub backlight: Peri<'static, DISPLAY_BACKLIGHT>,
 }
 
 pub struct TouchResources {
-    pub cs: TOUCH_CS,
-    pub irq: TOUCH_IRQ,
+    pub cs: Peri<'static, TOUCH_CS>,
+    pub irq: Peri<'static, TOUCH_IRQ>,
 }
 
 pub struct SdCardResources {
-    pub cs: SDCARD_CS,
+    pub cs: Peri<'static, SDCARD_CS>,
 }
