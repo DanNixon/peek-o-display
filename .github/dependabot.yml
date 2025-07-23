@@ -15,26 +15,10 @@ updates:
         patterns:
           - "*"
 
+  # Only enable dependabot for enough examples to cover all dependencies.
+  # Each example would end up getting updated if/when any breaking changes happen anyway so doing this saves some CI time.
   - package-ecosystem: cargo
     directory: "./bsp/examples/kitchen-sink-rp2040"
-    schedule:
-      interval: "monthly"
-    groups:
-      cargo-dependencies:
-        patterns:
-          - "*"
-
-  - package-ecosystem: cargo
-    directory: "./bsp/examples/kitchen-sink-rp235xa"
-    schedule:
-      interval: "monthly"
-    groups:
-      cargo-dependencies:
-        patterns:
-          - "*"
-
-  - package-ecosystem: cargo
-    directory: "./bsp/examples/steal-rp2040"
     schedule:
       interval: "monthly"
     groups:

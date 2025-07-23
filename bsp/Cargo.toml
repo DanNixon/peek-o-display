@@ -10,8 +10,9 @@ rp2040 = ["embassy-rp/rp2040"]
 rp235xa = ["embassy-rp/rp235xa"]
 
 [dependencies]
+defmt = "1.0.1"
 embassy-embedded-hal = { version = "=0.3.0", features = ["defmt"] }
-embassy-rp = "0.4.0"
+embassy-rp = { version = "0.4.0", features = ["defmt", "unstable-pac", "time-driver", "critical-section-impl"] }
 embassy-sync = "0.6.1"
 embassy-time = "0.4.0"
 embedded-hal = "1.0.0"

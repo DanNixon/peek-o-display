@@ -22,7 +22,7 @@ use peek_o_display_bsp::{
     display::{Display, Rotation},
     peripherals,
     sdcard::SdCard,
-    touch::Touch,
+    touch::{Calibration, Touch},
     PeekODisplay,
 };
 use portable_atomic as _;
@@ -41,9 +41,11 @@ async fn main(spawner: Spawner) {
 
     let spi = board.board_spi();
 
-    let (display, backlight) = board.display(spi, Rotation::Deg90);
+    let display_rotation = Rotation::Deg90;
 
-    let (touch, touch_irq) = board.touch(spi);
+    let (display, backlight) = board.display(spi, display_rotation);
+
+    let (touch, touch_irq) = board.touch(spi, display_rotation, Calibration::default());
 
     let sd_card = board.sdcard(spi);
 
