@@ -4,9 +4,11 @@
 use defmt::info;
 use defmt_rtt as _;
 use embassy_executor::Spawner;
-use embassy_rp::gpio::{Level, Output};
 use embassy_time::{Duration, Timer};
-use peek_o_display_bsp::PeekODisplay;
+use peek_o_display_bsp::{
+    embassy_rp::gpio::{Level, Output},
+    PeekODisplay,
+};
 use portable_atomic as _;
 
 #[panic_handler]
