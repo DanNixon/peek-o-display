@@ -15,6 +15,7 @@ use embedded_graphics::{
     text::Text,
     Drawable,
 };
+use mousefood::EmbeddedBackend;
 use panic_probe as _;
 use peek_o_display_bsp::{
     display::{Display, Rotation},
@@ -63,16 +64,23 @@ async fn display_task(mut display: Display, _backlight: Output<'static>) {
 
     Timer::after_secs(5).await;
 
-    let mut ticker = Ticker::every(Duration::from_hz(1));
+    let backend: EmbeddedBackend<SimulatorDisplay<_>, _> =
+        EmbeddedBackend::new(&mut display, backend_config);
+
+    let mut terminal = Terminal::new(backend)?;
 
     loop {
-        ticker.next().await;
-        display.clear(Rgb666::RED).unwrap();
-        ticker.next().await;
-        display.clear(Rgb666::GREEN).unwrap();
-        ticker.next().await;
-        display.clear(Rgb666::BLUE).unwrap();
+        terminal.draw(draw)?;
     }
+}
+
+fn draw(frame: &mut Frame) {
+    let text = "Ratatui on embedded devices!";
+    let paragraph = Paragraph::new(text.dark_gray()).wrap(Wrap { trim: true });
+    let bordered_block = Block::bordered()
+        .border_style(Style::new().yellow())
+        .title("Mousefood");
+    frame.render_widget(paragraph.block(bordered_block), frame.area());
 }
 
 #[embassy_executor::task]
