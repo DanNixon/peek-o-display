@@ -4,17 +4,9 @@
 use defmt::{info, unwrap};
 use defmt_rtt as _;
 use embassy_executor::Spawner;
-use embassy_time::{Duration, Ticker, Timer};
-use embedded_graphics::{
-    draw_target::DrawTarget,
-    geometry::Dimensions,
-    mono_font::{ascii::FONT_10X20, MonoTextStyle},
-    pixelcolor::Rgb666,
-    prelude::{Primitive, RgbColor},
-    primitives::PrimitiveStyleBuilder,
-    text::Text,
-    Drawable,
-};
+use embassy_time::{Duration, Ticker};
+use embedded_alloc::LlffHeap as Heap;
+use embedded_graphics::{draw_target::DrawTarget, pixelcolor::Rgb666, prelude::RgbColor};
 use mousefood::{EmbeddedBackend, EmbeddedBackendConfig};
 use panic_probe as _;
 use peek_o_display_bsp::{
@@ -30,8 +22,18 @@ use ratatui::{
     Frame, Terminal,
 };
 
+#[global_allocator]
+static HEAP: Heap = Heap::empty();
+
 #[embassy_executor::main]
 async fn main(spawner: Spawner) {
+    {
+        use core::mem::MaybeUninit;
+        const HEAP_SIZE: usize = 400_000;
+        static mut HEAP_MEM: [MaybeUninit<u8>; HEAP_SIZE] = [MaybeUninit::uninit(); HEAP_SIZE];
+        unsafe { HEAP.init(&raw mut HEAP_MEM as usize, HEAP_SIZE) }
+    }
+
     let board = PeekODisplay::default();
     let spi = board.board_spi();
 
@@ -44,30 +46,12 @@ async fn main(spawner: Spawner) {
     info!("Hello, world!");
 
     unwrap!(spawner.spawn(display_task(display, backlight)));
-    unwrap!(spawner.spawn(touch_task(touch, touch_irq)));
+    // unwrap!(spawner.spawn(touch_task(touch, touch_irq)));
 }
 
 #[embassy_executor::task]
 async fn display_task(mut display: Display, _backlight: Output<'static>) {
     display.clear(Rgb666::RED).unwrap();
-
-    let style = MonoTextStyle::new(&FONT_10X20, Rgb666::WHITE);
-    Text::new("HI", display.bounding_box().center(), style)
-        .draw(&mut display)
-        .unwrap();
-
-    display
-        .bounding_box()
-        .into_styled(
-            PrimitiveStyleBuilder::new()
-                .stroke_width(1)
-                .stroke_color(Rgb666::YELLOW)
-                .build(),
-        )
-        .draw(&mut display)
-        .unwrap();
-
-    Timer::after_secs(5).await;
 
     let backend = EmbeddedBackend::new(&mut display, EmbeddedBackendConfig::default());
 
