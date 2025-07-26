@@ -15,7 +15,7 @@ use embedded_graphics::{
     text::Text,
     Drawable,
 };
-use mousefood::EmbeddedBackend;
+use mousefood::{EmbeddedBackend, EmbeddedBackendConfig};
 use panic_probe as _;
 use peek_o_display_bsp::{
     display::{Display, Rotation},
@@ -24,6 +24,11 @@ use peek_o_display_bsp::{
     PeekODisplay,
 };
 use portable_atomic as _;
+use ratatui::{
+    style::{Style, Stylize},
+    widgets::{Block, Paragraph, Wrap},
+    Frame, Terminal,
+};
 
 #[embassy_executor::main]
 async fn main(spawner: Spawner) {
@@ -65,7 +70,7 @@ async fn display_task(mut display: Display, _backlight: Output<'static>) {
     Timer::after_secs(5).await;
 
     let backend: EmbeddedBackend<SimulatorDisplay<_>, _> =
-        EmbeddedBackend::new(&mut display, backend_config);
+        EmbeddedBackend::new(&mut display, EmbeddedBackendConfig::default());
 
     let mut terminal = Terminal::new(backend)?;
 
