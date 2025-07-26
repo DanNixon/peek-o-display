@@ -69,13 +69,12 @@ async fn display_task(mut display: Display, _backlight: Output<'static>) {
 
     Timer::after_secs(5).await;
 
-    let backend: EmbeddedBackend<SimulatorDisplay<_>, _> =
-        EmbeddedBackend::new(&mut display, EmbeddedBackendConfig::default());
+    let backend = EmbeddedBackend::new(&mut display, EmbeddedBackendConfig::default());
 
-    let mut terminal = Terminal::new(backend)?;
+    let mut terminal = Terminal::new(backend).unwrap();
 
     loop {
-        terminal.draw(draw)?;
+        terminal.draw(draw).unwrap();
     }
 }
 
