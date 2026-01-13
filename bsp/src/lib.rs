@@ -10,11 +10,11 @@ use crate::peripherals::*;
 use core::cell::RefCell;
 use embassy_embedded_hal::shared_bus::blocking::spi::SpiDeviceWithConfig;
 use embassy_rp::{
+    Peri, Peripherals as RpPeripherals,
     config::Config,
     gpio::{Input, Output},
-    Peri, Peripherals as RpPeripherals,
 };
-use embassy_sync::blocking_mutex::{raw::NoopRawMutex, Mutex};
+use embassy_sync::blocking_mutex::{Mutex, raw::NoopRawMutex};
 use mipidsi::options::Rotation;
 use portable_atomic as _;
 use static_cell::StaticCell;
