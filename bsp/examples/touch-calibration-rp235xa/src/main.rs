@@ -6,21 +6,21 @@ use defmt_rtt as _;
 use embassy_executor::Spawner;
 use embassy_time::{Duration, Ticker};
 use embedded_graphics::{
+    Drawable,
     draw_target::DrawTarget,
     geometry::Dimensions,
-    mono_font::{ascii::FONT_10X20, MonoTextStyle},
+    mono_font::{MonoTextStyle, ascii::FONT_10X20},
     pixelcolor::Rgb666,
     prelude::{Point, Primitive, RgbColor},
     primitives::{Line, PrimitiveStyle},
     text::Text,
-    Drawable,
 };
 use panic_probe as _;
 use peek_o_display_bsp::{
+    PeekODisplay,
     display::Rotation,
     embassy_rp::gpio::{Level, Output},
     touch::Calibration,
-    PeekODisplay,
 };
 
 #[embassy_executor::main]
@@ -56,15 +56,15 @@ async fn main(_spawner: Spawner) {
         let irq_level = touch_irq.get_level();
         led.set_level(irq_level);
 
-        if irq_level == Level::Low {
-            if let Some(point) = touch.read() {
-                info!("touch at : {},{}", point.0, point.1);
+        if irq_level == Level::Low
+            && let Some(point) = touch.read()
+        {
+            info!("touch at : {},{}", point.0, point.1);
 
-                draw_cursor(&mut display, last, Rgb666::BLACK, Rgb666::BLACK);
-                draw_cursor(&mut display, point, Rgb666::RED, Rgb666::GREEN);
+            draw_cursor(&mut display, last, Rgb666::BLACK, Rgb666::BLACK);
+            draw_cursor(&mut display, point, Rgb666::RED, Rgb666::GREEN);
 
-                last = point;
-            }
+            last = point;
         }
     }
 }

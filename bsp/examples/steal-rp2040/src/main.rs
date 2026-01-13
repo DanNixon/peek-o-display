@@ -6,8 +6,8 @@ use defmt_rtt as _;
 use embassy_executor::Spawner;
 use embassy_time::{Duration, Timer};
 use peek_o_display_bsp::{
-    embassy_rp::gpio::{Level, Output},
     PeekODisplay,
+    embassy_rp::gpio::{Level, Output},
 };
 use portable_atomic as _;
 

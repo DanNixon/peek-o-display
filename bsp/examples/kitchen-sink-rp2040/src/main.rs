@@ -7,23 +7,23 @@ use defmt_rtt as _;
 use embassy_executor::Spawner;
 use embassy_time::{Duration, Ticker, Timer};
 use embedded_graphics::{
+    Drawable,
     draw_target::DrawTarget,
     geometry::Dimensions,
-    mono_font::{ascii::FONT_10X20, MonoTextStyle},
+    mono_font::{MonoTextStyle, ascii::FONT_10X20},
     pixelcolor::Rgb666,
     prelude::{Primitive, RgbColor},
     primitives::PrimitiveStyleBuilder,
     text::Text,
-    Drawable,
 };
 use panic_probe as _;
 use peek_o_display_bsp::{
+    PeekODisplay,
     display::{Display, Rotation},
     embassy_rp::gpio::{Input, Level, Output},
     peripherals::{self, Peri},
     sdcard::SdCard,
     touch::{Calibration, Touch},
-    PeekODisplay,
 };
 use portable_atomic as _;
 

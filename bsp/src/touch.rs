@@ -1,6 +1,6 @@
 use crate::{
-    display::{HEIGHT, WIDTH},
     BoardSharedSpiBus, BoardSpiDevice, TouchResources,
+    display::{HEIGHT, WIDTH},
 };
 use defmt::debug;
 use embassy_embedded_hal::shared_bus::blocking::spi::SpiDeviceWithConfig;
