@@ -49,7 +49,7 @@ impl PeekODisplay {
 
     /// # Safety
     ///
-    /// OK providing that only one instance of `PicoPlc` exists.
+    /// OK providing that only one instance of `PeekODisplay` exists.
     pub unsafe fn steal() -> Self {
         let p = unsafe { RpPeripherals::steal() };
         Self::from_peripherals(p)
