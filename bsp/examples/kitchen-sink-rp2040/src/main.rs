@@ -2,7 +2,7 @@
 #![no_main]
 
 use assign_resources::assign_resources;
-use defmt::{info, unwrap};
+use defmt::info;
 use defmt_rtt as _;
 use embassy_executor::Spawner;
 use embassy_time::{Duration, Ticker, Timer};
@@ -51,10 +51,10 @@ async fn main(spawner: Spawner) {
 
     info!("Hello, world!");
 
-    unwrap!(spawner.spawn(led_task(r.led)));
-    unwrap!(spawner.spawn(display_task(display, backlight)));
-    unwrap!(spawner.spawn(touch_task(touch, touch_irq)));
-    unwrap!(spawner.spawn(sdcard_task(sd_card)));
+    spawner.spawn(led_task(r.led).unwrap());
+    spawner.spawn(display_task(display, backlight).unwrap());
+    spawner.spawn(touch_task(touch, touch_irq).unwrap());
+    spawner.spawn(sdcard_task(sd_card).unwrap());
 }
 
 #[embassy_executor::task]
